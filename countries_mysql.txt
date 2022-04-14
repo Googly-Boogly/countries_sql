@@ -1,0 +1,50 @@
+-- USE world;
+
+-- NUMBER 1 
+-- SELECT country_code, language, percentage
+-- FROM languages
+-- WHERE language = 'Slovene'
+-- ORDER BY percentage DESC
+
+-- --NUMBER 1 
+-- NUMBER 2
+-- SELECT COUNT(country_id) AS total_cities, countries.name
+-- FROM cities, countries
+-- GROUP BY country_code DESC;
+-- NUMBER 2
+-- NUMBER 3
+-- SELECT name, population
+-- FROM cities
+-- WHERE population >= 500000
+-- ORDER BY name, population DESC
+-- NUMBER 3
+-- NUMBER 4
+-- SELECT percentage, language, countries.name
+-- FROM languages
+
+-- JOIN countries
+-- ON languages.country_code = countries.code
+-- WHERE percentage > 89
+-- ORDER BY percentage desc
+-- NUMBER 4
+-- NUMBER 5
+-- SELECT countries.name
+-- FROM countries
+-- WHERE population >= 100000 AND surface_area < 501
+-- NUMBER 5
+-- --NUMBER 6 
+-- SELECT countries.name, countries.government_form, countries.capital, countries.life_expectancy
+-- FROM countries
+-- WHERE government_form = 'Constitutional Monarchy' AND capital > 200 AND life_expectancy > 75
+-- NUMBER 6
+-- NUMBER 7
+-- SELECT countries.name AS COUNTRY_NAME, cities.name AS CITY_NAME, cities.district AS DISTRICT, cities.population AS POP
+-- FROM cities, countries
+-- WHERE countries.name = 'Argentina' AND DISTRICT = 'Buenos Aires' AND cities.population > 500000
+-- NUMBER 7
+-- NUMBER 8
+-- SELECT region, COUNT(name)
+-- FROM countries
+-- GROUP BY region
+-- ORDER BY COUNT(name) ASC
+-- NUMBER 8
